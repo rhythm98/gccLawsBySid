@@ -1,0 +1,224 @@
+<!-- Index Template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Template</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        a:link, a:visited {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .content {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 100px;
+            text-align: center; /* Center align the content */
+        }
+        .content button {
+            background-color: #1098ad;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .content button:hover {
+            background-color: orangered;
+        }
+        .content a {
+            color: #036b7a; /* Set the color of the links to the previous color */
+            text-align: left;
+            display: block;
+            margin-top: 10px; /* Increased margin for spacing */
+        }
+        .content a.bold {
+            font-weight: bold; /* Make chapter titles bold */
+        }
+        .dropdown-content {
+            display: none;
+            margin-left: 20px;
+        }
+        .dropdown-content a {
+            display: block;
+            margin-top: 10px; /* Increased margin for spacing */
+        }
+        .gap {
+            margin-top: 40px; /* Add space equivalent to two lines */
+        }
+        .line-space {
+            margin-top: 20px; /* Add space between title and the paragraph */
+        }
+        ol {
+            padding-left: 28pt;
+        }
+        .button-container {
+            display: flex;
+            justify-content: flex-end; /* Align buttons to the right */
+            margin-bottom: 20px; /* Add margin below buttons */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="button-container">
+                <button onclick="expandAll()">Expand All</button>
+                <button onclick="collapseAll()">Collapse All</button>
+            </div>
+            <a href="index.html"><button>Home</button></a>
+            <br><br> <!-- Two line breaks -->
+            <div
+                class="container"
+                style="
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    row-gap: 20px;
+                    width: 800px;
+                    margin: 0 auto;
+                    text-align: left; /* Left align the content */
+                "
+            >
+                <div>
+                    <a href="javascript:void(0)" onclick="toggleDropdown('ch_01')" class="bold">Chapter 1 - General provisions</a>
+                    <div id="ch_01" class="dropdown-content">
+                        <a href="Article_01.html">Article 1 - Definitions</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" onclick="toggleDropdown('ch_02')" class="bold">Chapter 2 - Imposition of Corporate Tax and Applicable Rates</a>
+                    <div id="ch_02" class="dropdown-content">
+                        <a href="Article_02.html">Article 2 - Imposition of Corporate Tax</a>
+                        <a href="Article_03.html">Article 3 - Corporate Tax Rate</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" onclick="toggleDropdown('ch_03')" class="bold">Chapter 3 - Exempt Person</a>
+                    <div id="ch_03" class="dropdown-content">
+                        <a href="Article_04.html">Article 4 - Exempt Person</a>
+                        <a href="Article_05.html">Article 5 - Government Entity</a>
+                        <a href="Article_06.html">Article 6 - Government Controlled Entity</a>
+                        <a href="Article_07.html">Article 7 - Extractive Business</a>
+                        <a href="Article_08.html">Article 8 - Non-Extractive Natural Resource Business</a>
+                        <a href="Article_09.html">Article 9 - Qualifying Public Benefit Entity</a>
+                        <a href="Article_10.html">Article 10 - Qualifying Investment Fund</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" onclick="toggleDropdown('ch_04')" class="bold">Chapter 4 - Taxable Person and Corporate Tax Base</a>
+                    <div id="ch_04" class="dropdown-content">
+                        <a href="Article_11.html">Article 11 - Taxable Person</a>
+                        <a href="Article_12.html">Article 12 - Corporate Tax Base</a>
+                        <a href="Article_13.html">Article 13 - State Sourced Income</a>
+                        <a href="Article_14.html">Article 14 - Permanent Establishment</a>
+                        <a href="Article_15.html">Article 15 - Investment Manager Exemption</a>
+                        <a href="Article_16.html">Article 16 - Partners in an Unincorporated Partnership</a>
+                        <a href="Article_17.html">Article 17 - Family Foundation</a>
+                    </div>
+                </div>
+		                <div>
+                    <a href="javascript:void(0)" onclick="toggleDropdown('ch_05')" class="bold">Chapter 5 - Free Zone Person</a>
+                    <div id="ch_05" class="dropdown-content">
+                        <a href="Article_18.html">Article 18 - Qualifying Free Zone Person</a>
+                        <a href="Article_19.html">Article 19 - Election to be Subject to Corporate Tax</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" onclick="toggleDropdown('ch_06')" class="bold">Chapter 6 - Calculating Taxable Income</a>
+                    <div id="ch_06" class="dropdown-content">
+                        <a href="Article_20.html">Article 20 - General Rules for Determining Taxable Income</a>
+                        <a href="Article_21.html">Article 21 - Small Business Relief</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" onclick="toggleDropdown('ch_07')" class="bold">Chapter 7 - Exempt Income</a>
+                    <div id="ch_07" class="dropdown-content">
+                        <a href="Article_22.html">Article 22 - Exempt Income</a>
+                        <a href="Article_23.html">Article 23 - Participation Exemption</a>
+                        <a href="Article_24.html">Article 24 - Foreign Permanent Establishment Exemption</a>
+                        <a href="Article_25.html">Article 25 - Non-Resident Person Operating Aircraft or Ships in International Transportation</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" onclick="toggleDropdown('ch_08')" class="bold">Chapter 8 - Reliefs</a>
+                    <div id="ch_08" class="dropdown-content">
+                        <a href="Article_26.html">Article 26 - Transfers Within a Qualifying Group</a>
+                        <a href="Article_27.html">Article 27 - Business Restructuring Relief</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" onclick="toggleDropdown('ch_09')" class="bold">Chapter 9 - Deductions</a>
+                    <div id="ch_09" class="dropdown-content">
+                        <a href="Article_28.html">Article 28 - Deductible Expenditure</a>
+                        <a href="Article_29.html">Article 29 - Interest Expenditure</a>
+                        <a href="Article_30.html">Article 30 - General Interest Deduction Limitation Rule</a>
+                        <a href="Article_31.html">Article 31 - Specific Interest Deduction Limitation Rule</a>
+                        <a href="Article_32.html">Article 32 - Entertainment Expenditure</a>
+                        <a href="Article_33.html">Article 33 - Non-deductible Expenditure</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" onclick="toggleDropdown('ch_10')" class="bold">Chapter 10 - Transactions with Related Parties and Connected Persons</a>
+                    <div id="ch_10" class="dropdown-content">
+                        <a href="Article_34.html">Article 34 - Arm's Length Principle</a>
+                        <a href="Article_35.html">Article 35 - Related Parties and Control</a>
+                        <a href="Article_36.html">Article 36 - Payments to Connected Persons</a>
+                    </div>
+                </div>
+		
+		<!-- Add more chapters and their corresponding articles as needed -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+
+        function expandAll() {
+            var dropdowns = document.getElementsByClassName('dropdown-content');
+            for (var i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].style.display = 'block';
+            }
+        }
+
+        function collapseAll() {
+            var dropdowns = document.getElementsByClassName('dropdown-content');
+            for (var i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

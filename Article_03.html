@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        a:link, a:visited {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .content {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 100px;
+            text-align: center; /* Center align the content */
+        }
+        .content button {
+            background-color: #1098ad;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        p, ol {
+            margin-left: 0;
+            padding-left: 6pt;
+            text-indent: 0pt;
+            line-height: 1.5; /* Increased line height for readability */
+            text-align: left;
+            margin-top: 1em; /* Add spacing between paragraphs */
+        }
+        .gap {
+            margin-top: 40px; /* Add space equivalent to two lines */
+        }
+        .bold {
+            font-weight: bold;
+            text-align: left;
+            display: block;
+            margin-top: 20px; /* Add a margin for better spacing */
+        }
+        .line-space {
+            margin-top: 20px; /* Add space between title and the paragraph */
+        }
+        ol {
+            padding-left: 28pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <a href="index.html"><button>Home</button></a>
+            <div class="gap"></div>
+            <span class="bold">Article 3 - Corporate Tax Rate</span>
+            <div class="line-space"></div>
+            <ol id="l2">
+                <li data-list-text="1.">
+                    <p>
+                        Corporate Tax shall be imposed on the Taxable Income at the following rates:
+                    </p>
+                    <ol id="l3">
+                        <li data-list-text="a)">
+                            <p>
+                                0% (zero percent) on the portion of the Taxable Income not exceeding the amount specified in a decision issued by the Cabinet at the suggestion of the Minister.
+                            </p>
+                        </li>
+                        <li data-list-text="b)">
+                            <p>
+                                9% (nine percent) on Taxable Income that exceeds the amount specified in a decision issued by the Cabinet at the suggestion of the Minister.
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+                <li data-list-text="2.">
+                    <p>
+                        Corporate Tax shall be imposed on a Qualifying Free Zone Person at the following rates:
+                    </p>
+                    <ol id="l4">
+                        <li data-list-text="a)">
+                            <p>
+                                0% (zero percent) on Qualifying Income.
+                            </p>
+                        </li>
+                        <li data-list-text="b)">
+                            <p>
+                                9% (nine percent) on Taxable Income that is not Qualifying Income under Article 18 of this Decree-Law and any decision issued by the Cabinet at the suggestion of the Minister in respect thereof.
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
